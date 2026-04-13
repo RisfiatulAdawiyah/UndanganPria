@@ -8,7 +8,8 @@ import { toast } from "sonner";
 const Settings = () => {
   const { user } = useAuth();
   const { data: weddings = [] } = useUserWeddings(user?.id || "");
-  const wedding = weddings[0];
+  // Filter wedding by slug 'indra-indah' for groom's invitation
+  const wedding = weddings.find(w => w.slug === 'indra-indah') || weddings[0];
   const updateWedding = useUpdateWedding();
   const checkSlug = useCheckSlug();
 

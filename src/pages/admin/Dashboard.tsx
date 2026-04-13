@@ -9,7 +9,8 @@ import { toast } from "sonner";
 const Dashboard = () => {
   const { user } = useAuth();
   const { data: weddings = [], isLoading } = useUserWeddings(user?.id || "");
-  const wedding = weddings[0]; // Get first wedding
+  // Filter wedding by slug 'indra-indah' for groom's invitation
+  const wedding = weddings.find(w => w.slug === 'indra-indah') || weddings[0];
   const { data: stats } = useRSVPStats(wedding?.id || "");
 
   const copyInvitationLink = () => {

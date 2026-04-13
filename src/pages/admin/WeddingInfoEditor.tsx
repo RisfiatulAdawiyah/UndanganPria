@@ -16,7 +16,8 @@ const WeddingInfoEditor = () => {
   const { data: weddings, isLoading } = useUserWeddings(user?.id || "");
   const updateWedding = useUpdateWedding();
   
-  const wedding = weddings?.[0];
+  // Filter wedding by slug 'indra-indah' for groom's invitation
+  const wedding = weddings?.find(w => w.slug === 'indra-indah') || weddings?.[0];
   const [isUploadingMusic, setIsUploadingMusic] = useState(false);
   const [formData, setFormData] = useState({
     groom_name: "",

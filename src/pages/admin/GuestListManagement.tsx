@@ -19,7 +19,8 @@ import { GuestList, GuestListInsert, GUEST_CATEGORIES } from "@/types/wedding.ty
 const GuestListManagement = () => {
   const { user } = useAuth();
   const { data: weddings, isLoading: weddingsLoading } = useUserWeddings(user?.id || "");
-  const wedding = weddings?.[0];
+  // Filter wedding by slug 'indra-indah' for groom's invitation
+  const wedding = weddings?.find(w => w.slug === 'indra-indah') || weddings?.[0];
   
   const { data: guests, isLoading } = useGuestList(wedding?.id || "");
   const createGuest = useCreateGuest();

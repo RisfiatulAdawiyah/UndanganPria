@@ -39,7 +39,8 @@ const iconOptions = [
 const LoveStoryManagement = () => {
   const { user } = useAuth();
   const { data: weddings, isLoading: weddingsLoading } = useUserWeddings(user?.id || "");
-  const wedding = weddings?.[0];
+  // Filter wedding by slug 'indra-indah' for groom's invitation
+  const wedding = weddings?.find(w => w.slug === 'indra-indah') || weddings?.[0];
   
   const { data: stories, isLoading } = useLoveStories(wedding?.id || "");
   const createStory = useCreateLoveStory();
