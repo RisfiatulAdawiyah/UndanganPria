@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from "framer-motion";
+﻿import { motion, AnimatePresence } from "framer-motion";
 import heroImage from "@/assets/wedding-hero.jpg";
 import couple1 from "@/assets/couple1.png";
 import { Wedding } from "@/types/wedding.types";

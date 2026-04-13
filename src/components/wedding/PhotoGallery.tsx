@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { useGalleryPhotos } from "@/hooks/useGallery";
@@ -31,7 +31,7 @@ const PhotoGallery = ({ weddingId }: PhotoGalleryProps) => {
   if (photos.length === 0) return null;
 
   return (
-    <section className="section-spacing relative overflow-hidden bg-batik-pattern bg-batik-ornament" style={{ '--bg-color': '#164d3f' } as React.CSSProperties}>
+    <section className="section-spacing relative overflow-hidden bg-batik-pattern bg-batik-ornament" style={{ '--bg-color': '#193250' } as React.CSSProperties}>
       {/* Floating particles effect */}
       <FloatingParticles />
       

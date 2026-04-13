@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+﻿import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface CountdownTimerProps {
@@ -32,7 +32,7 @@ const CountdownTimer = ({ weddingDate }: CountdownTimerProps) => {
   ];
 
   return (
-    <section className="section-spacing relative overflow-hidden bg-batik-pattern bg-batik-ornament" style={{ '--bg-color': '#1a5f4f' } as React.CSSProperties}>
+    <section className="section-spacing relative overflow-hidden bg-batik-pattern bg-batik-ornament" style={{ '--bg-color': '#1e3a5f' } as React.CSSProperties}>
       {/* Batik pattern border */}
       <div className="absolute top-0 left-0 right-0 batik-border-top" />
       

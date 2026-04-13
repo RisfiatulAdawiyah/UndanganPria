@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Heart } from "lucide-react";
 import islamicPattern from "@/assets/islamic-pattern.png";
 import { Wedding } from "@/types/wedding.types";
@@ -15,7 +15,7 @@ const ClosingSection = ({ wedding }: ClosingSectionProps) => {
     year: 'numeric'
   }).split('/').join(' . ');
   return (
-    <section className="section-spacing relative overflow-hidden bg-batik-pattern bg-batik-ornament" style={{ '--bg-color': '#1a5f4f' } as React.CSSProperties}>
+    <section className="section-spacing relative overflow-hidden bg-batik-pattern bg-batik-ornament" style={{ '--bg-color': '#1e3a5f' } as React.CSSProperties}>
       {/* Batik pattern border */}
       <div className="absolute top-0 left-0 right-0 batik-border-top" />
       

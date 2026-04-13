@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { MapPin, Clock, Calendar } from "lucide-react";
 import { Wedding } from "@/types/wedding.types";
 
@@ -67,7 +67,7 @@ const EventDetails = ({ wedding }: EventDetailsProps) => {
         hour: '2-digit', 
         minute: '2-digit',
         hour12: false
-      })} ${akadEnd ? `– ${akadEnd.toLocaleTimeString('en-US', { 
+      })} ${akadEnd ? `â€“ ${akadEnd.toLocaleTimeString('en-US', { 
         hour: '2-digit', 
         minute: '2-digit',
         hour12: false
@@ -97,7 +97,7 @@ const EventDetails = ({ wedding }: EventDetailsProps) => {
         hour: '2-digit', 
         minute: '2-digit',
         hour12: false
-      })} ${resepsiEnd ? `– ${resepsiEnd.toLocaleTimeString('en-US', { 
+      })} ${resepsiEnd ? `â€“ ${resepsiEnd.toLocaleTimeString('en-US', { 
         hour: '2-digit', 
         minute: '2-digit',
         hour12: false
@@ -111,7 +111,7 @@ const EventDetails = ({ wedding }: EventDetailsProps) => {
 
   if (events.length === 0) return null;
   return (
-    <section className="section-spacing relative overflow-hidden bg-batik-pattern bg-batik-ornament" style={{ '--bg-color': '#164d3f' } as React.CSSProperties}>
+    <section className="section-spacing relative overflow-hidden bg-batik-pattern bg-batik-ornament" style={{ '--bg-color': '#193250' } as React.CSSProperties}>
       {/* Batik pattern border */}
       <div className="absolute top-0 left-0 right-0 batik-border-top" />
       

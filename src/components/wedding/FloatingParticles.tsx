@@ -1,4 +1,4 @@
-const FloatingParticles = () => {
+﻿const FloatingParticles = () => {
   const particles = Array.from({ length: 10 }, (_, i) => ({
     id: i,
     type: ['particle-heart', 'particle-flower', 'particle-sparkle', 'particle-dot'][Math.floor(Math.random() * 4)],

@@ -1,4 +1,4 @@
-import { Calendar, Share2, Copy, Check } from "lucide-react";
+﻿import { Calendar, Share2, Copy, Check } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { toast } from "sonner";
@@ -29,7 +29,7 @@ const ActionButtons = ({ weddingDate, groomName, brideName }: ActionButtonsProps
 
   const shareInvitation = () => {
     const url = window.location.href;
-    const text = `Anda diundang ke pernikahan ${groomName} & ${brideName}! 💍✨`;
+    const text = `Anda diundang ke pernikahan ${groomName} & ${brideName}! ðŸ’âœ¨`;
     
     if (navigator.share) {
       navigator.share({

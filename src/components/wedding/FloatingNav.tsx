@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+﻿import { useState, useEffect } from "react";
 import { Home, Calendar, Heart, Gift, MessageSquare } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 

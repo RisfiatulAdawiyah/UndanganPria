@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { motion } from "framer-motion";
 import { Send, Check } from "lucide-react";
 import { useSubmitRSVP } from "@/hooks/useRSVP";
@@ -49,7 +49,7 @@ const RSVPForm = ({ weddingId }: RSVPFormProps) => {
                       smooth-transition placeholder:text-muted-foreground/40 hover:bg-background/60`;
 
   return (
-    <section className="section-spacing relative overflow-hidden bg-batik-pattern bg-batik-ornament" style={{ '--bg-color': '#1a5f4f' } as React.CSSProperties}>
+    <section className="section-spacing relative overflow-hidden bg-batik-pattern bg-batik-ornament" style={{ '--bg-color': '#1e3a5f' } as React.CSSProperties}>
       {/* Batik pattern border */}
       <div className="absolute top-0 left-0 right-0 batik-border-top" />
       

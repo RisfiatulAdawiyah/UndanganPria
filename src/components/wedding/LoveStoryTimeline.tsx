@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Heart, Sparkles, Star, Gift, PartyPopper, Calendar, MessageCircle, Camera } from "lucide-react";
 import { useLoveStories } from "@/hooks/useLoveStory";
 
@@ -32,7 +32,7 @@ const LoveStoryTimeline = ({ weddingId }: LoveStoryTimelineProps) => {
 
   if (events.length === 0) return null;
   return (
-    <section className="section-spacing relative overflow-hidden bg-batik-pattern bg-batik-ornament" style={{ '--bg-color': '#164d3f' } as React.CSSProperties}>
+    <section className="section-spacing relative overflow-hidden bg-batik-pattern bg-batik-ornament" style={{ '--bg-color': '#193250' } as React.CSSProperties}>
       {/* Batik pattern border */}
       <div className="absolute top-0 left-0 right-0 batik-border-top" />
       
